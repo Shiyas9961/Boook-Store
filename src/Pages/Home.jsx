@@ -12,7 +12,7 @@ const Home = () => {
 
     useEffect(()=>{
         setLoading(true)
-        axios.get('http://localhost:5555/book').then(res=>{
+        axios.get('https://book-store-app-11bx.onrender.com/book/book').then(res=>{
             setBooks(res.data.data)
             setLoading(false)
         }).catch(err=>{
