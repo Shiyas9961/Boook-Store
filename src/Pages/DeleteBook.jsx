@@ -11,7 +11,7 @@ const DeleteBook = () => {
 
   const handleDelete = () => {
     setLoading(true)
-    axios.delete(`http://localhost:5555/book/${id}`).then(()=>{
+    axios.delete(`https://book-store-app-11bx.onrender.com/book/${id}`).then(()=>{
       setLoading(false)
       navigate('/')
   }).catch(err=>{
