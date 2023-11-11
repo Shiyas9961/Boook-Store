@@ -33,7 +33,7 @@ const EditBook = () => {
       publishYear
     }
     setLoading(true)
-    axios.put(`http://localhost:5555/book/${id}`,data).then(()=>{
+    axios.put(`https://book-store-app-11bx.onrender.com/book/${id}`,data).then(()=>{
       setLoading(false)
       navigate('/')
     }).catch(err=>{
