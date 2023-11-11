@@ -18,7 +18,7 @@ const CreateBook = () => {
       publishYear
     }
     setLoading(true)
-    axios.post('http://localhost:5555/book',data).then(()=>{
+    axios.post('https://book-store-app-11bx.onrender.com/book',data).then(()=>{
       setLoading(false)
       navigate('/')
     }).catch(err=>{
